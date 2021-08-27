@@ -1,6 +1,6 @@
 # Avengers_Quiz
 
-CLI App Quiz about how well do you know me!
+CLI App Quiz having mcq's all about the Avengers MCU!
 
 Dependencies:
 
