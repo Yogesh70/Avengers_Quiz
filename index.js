@@ -6,7 +6,7 @@ const user = readLineSync.question(chalk.blue(`Enter your name: `));
 const welcomeMsg = 'Welcome ' + chalk.bgWhite.black(user) + ' to ' + chalk.bold.yellow('THE AVENGERS QUIZ! \n');
 console.log(chalk.green(welcomeMsg));
 
-console.log('The quiz has 5 MCQs based on Avengers MCU, you have to enter the correct option: \n');
+console.log('The quiz has 7 MCQs based on Avengers MCU, you have to enter the correct option: \n');
 
 let score = 0;
 
@@ -45,7 +45,22 @@ let questionBank = [{
   c: 'Black Widow, Captain America, Hawkeye, the Hulk, Iron Man',
   d: 'Black Panther, Black Widow, Captain America, Scarlet Witch, Vision',
   answer: 'a'
-}]
+}, {
+  question: 'Where did the Hulk go at the end of Age of Ultron? ',
+  a: 'Alternative Universe',
+  b: 'Brazil',
+  c: 'Space',
+  d: 'Titan',
+  answer: 'c' 
+}, {
+  question: 'How many infinity stones are there? ',
+  a: '8',
+  b: '5',
+  c: '4',
+  d: '6',
+  answer: 'd'
+}
+]
 
 function play(i,answer) {
   console.log(chalk.bgCyan.black((i+1) + "." + questionBank[i].question));  
